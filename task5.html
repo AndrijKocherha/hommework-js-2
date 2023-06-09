@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/nullstyle.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>task5</title>
+   
+</head>
+<body>
+   <main class="page">
+      <div class="page__container task">
+         <div class="task__condition text"></div>
+      </div>
+   </main>
+   <script>
+   // const SECONDSIN_IN_ERA = 86400
+      let seconsds = parseInt(prompt("кількість секунд з початку доби" ))
+      let minutes = (seconsds / 60).toFixed(2)
+      let hours = (seconsds / 3660).toFixed(2)
+      document.write(`
+         хвилин ${minutes} <br/>
+         годин ${hours}
+      `)
+   </script>
+</body>
+</html>

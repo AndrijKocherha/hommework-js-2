@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/nullstyle.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>task6</title>
+   
+</head>
+<body>
+   <main class="page">
+      <div class="page__container task">
+         <div class="task__condition text">Задача 6. З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість
+            кожного товару окремо та загальну вартість. Вивести чек (як у супермаркеті) використовуючи
+            елементи розмітки.</div>
+      </div>
+   </main>
+   <script>
+    let productQuantity = parseInt(prompt("кількість товарів"))
+      let productPrice = parseFloat(prompt("ціна товару"))
+      let totalPrice  = productPrice * productQuantity
+      document.write(`
+         товар: ${productPrice}грн -- (${productQuantity}X) <br/>
+         ============================================== <br/>
+         загальна ціна: ${totalPrice}грн
+      `)
+   </script>
+</body>
+</html>
